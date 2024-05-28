@@ -1,0 +1,176 @@
+h1{
+    font-size: xx-large;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243,243,243);
+}
+
+header{
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 5vh;
+    background-color: #243444;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+header img{
+    height: 4vh;
+    width: auto;
+}
+
+
+#section_estilosa {
+    background-image: url('../img/Background.png'); /* Caminho ajustado */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#explore{
+    background-color: #243444;
+    text-align: left;
+    padding: 2px;
+    font-size:large;
+    font-family: 'Sora',sans-serif;
+    color: beige;
+    font-weight: 500;
+    width: 30vw;
+    min-width: 500px;
+    border-radius: 35px;
+    line-height: auto;
+    height:min-content;
+    overflow: -moz-hidden-unscrollable;
+    
+
+    
+}
+
+#explore h1{
+    color: #EC0444;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+#explore p{
+    margin-left: 20px;
+}
+
+#botão_inscreva-se{
+    margin-left: 2vw;
+    background-color: #EC0444;
+    width: 10vw;
+    text-align: center;
+    border-radius: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+a:hover{
+    color: black;
+}
+#titulo_de_section{
+    color:#243444;
+}
+
+#laboratórios_section{
+    text-align: center;
+    
+
+
+}
+
+.lab_img{
+    min-height: 150px;
+    max-height: 300px;
+    width: auto;
+    margin: 5px;
+    border-radius: 35px;
+}
+
+.lab_texto{
+    width: 30%;
+    height: auto;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.background_verde{
+    background-color: green;
+}
+.background_roxo{
+    background-color: rgb(90, 20, 182);
+}
+
+.background_preto{
+    background-color: black;
+}
+
+.background_cinza{
+    background-color: gray;
+}
+
+.background_azul{
+    background-color: blue;
+}
+
+.laboratórios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#coordenadora{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #243444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quadrado_coordenadora{
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 105, 179);
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 55px;
+}
+
+#foto_coordenadora{
+    margin: 10px;
+    border-radius: 55px;
+    max-width: 900px;
+    min-width: 300px;
+    height: auto;
+}
+
+#texto_coordenadora{
+    max-width: 800px;
+    height: auto;
+    color: antiquewhite;
+    font-size: large;
+}
