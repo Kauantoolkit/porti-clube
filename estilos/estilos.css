@@ -4,11 +4,23 @@ h1{
 
 
 body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: rgb(243,243,243);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
 }
 
 header{
@@ -26,6 +38,7 @@ header{
 header img{
     height: 4vh;
     width: auto;
+    margin-left: 20vw;
 }
 
 
@@ -45,13 +58,13 @@ header img{
 #explore{
     background-color: #243444;
     text-align: left;
-    padding: 2px;
+    padding: 3vw;
     font-size:large;
-    font-family: 'Sora',sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: beige;
     font-weight: 500;
-    width: 30vw;
-    min-width: 500px;
+    width: 70vw;
+
     border-radius: 35px;
     line-height: auto;
     height:min-content;
@@ -64,19 +77,21 @@ header img{
 #explore h1{
     color: #EC0444;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 4vw;
 }
 
 #explore p{
-    margin-left: 20px;
+    margin-left: 4vw;
+    margin-bottom: 10px;
 }
 
 #botão_inscreva-se{
-    margin-left: 2vw;
+    margin-left: 4vw;
     background-color: #EC0444;
     width: 10vw;
     text-align: center;
     border-radius: 35px;
+    overflow: hidden;
 }
 
 a{
@@ -85,6 +100,12 @@ a{
 }
 a:hover{
     color: black;
+}
+
+#botão_inscreva-se a{
+    overflow: hidden;
+    font-size: 1.5vw;
+
 }
 #titulo_de_section{
     color:#243444;
@@ -95,17 +116,15 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
-
+    overflow: hidden;
 }
 
 .lab_img{
-    min-height: 150px;
-    max-height: 300px;
+    height: 20vh;
     width: auto;
     margin: 5px;
     border-radius: 35px;
+    overflow: hidden;
 }
 
 .lab_texto{
@@ -114,6 +133,7 @@ a:hover{
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .background_verde{
@@ -162,13 +182,15 @@ a:hover{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 55px;
+    width: 100%;
+
 }
 
 #foto_coordenadora{
     margin: 10px;
     border-radius: 55px;
-    max-width: 900px;
-    min-width: 300px;
+    width: 30vw;
+ 
     height: auto;
 }
 
@@ -178,3 +200,49 @@ a:hover{
     color: antiquewhite;
     font-size: large;
 }
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-size:medium;
+        margin-bottom: 5px;
+    }
+    #explore{
+        font-size: 2vw;
+        width: 50vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 100px;
+        min-width: none;
+        
+    }
+    #explore p{
+        font-size: smaller;
+    }
+
+    #texto_coordenadora{
+        font-size: smaller;
+    }
+    .laboratórios{
+        flex-direction: column;
+
+    }
+    .lab_img{
+        height: 10vh;
+        width: auto;
+    }
+    .lab_texto{
+        font-size: smaller;
+        width: 70vw;
+    }
+    #quadrado_coordenadora{
+        flex-direction: column;
+    }
+    #texto_coordenadora{
+        font-size:10px;
+        margin: 20px;
+    }
+  }
